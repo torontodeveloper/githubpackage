@@ -1,5 +1,5 @@
 from setuptools import setup
 
 setup(name='mypackage',
-      version='1.1.0',author='kevintorontodeveloper',
+      version='2.0.0',author='kevintorontodeveloper',
       packages=['githubpackage'])
