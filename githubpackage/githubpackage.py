@@ -42,7 +42,6 @@ class GitHubAPI():
         endpoint = url+user
         try:
             response = requests.get(url+user)
-            print('SUCCESSS***',response.text)
         except requests.exceptions.ConnectionError:
             print('Retry: 2nd time API**')
             response = requests.get(endpoint,headers=headers)
