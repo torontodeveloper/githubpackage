@@ -8,7 +8,13 @@ details
     Usage
 
 1.  api = GitHubAPI()
-    api.get_github_user('karpathy')
+    user1 = api.get_github_user('karpathy')
 
 2.  api = GitHubAPI()
-    api.get_github_user('getify')
+    user2 = api.get_github_user('getify')
+
+for key,value in user1.items():
+print(f'item is {key} and {value}')
+
+for key,value in user2.items():
+print(f'GitHub User details: Item: {key} and value: {value}')
