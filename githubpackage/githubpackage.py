@@ -14,6 +14,9 @@ class GitHubAPI():
     Returns
     -----
     None
+    Usage
+    api = GitHubAPI()
+    api.get_github_user('karpathy')
     '''
     
     def __init__(self) -> None:
@@ -47,8 +50,3 @@ class GitHubAPI():
         # user_details.update(json_response)
         return response.json()
 
-github_api= GitHubAPI()   
-user = github_api.get_github_user('karpathy')
-
-for keys,values in user.items():
-    print(f'{keys}:\t{values}')
